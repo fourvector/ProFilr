@@ -68,7 +68,9 @@ It is necessary to setup URLScheme, so that your application is able to communic
 	</array>
 ```
 
-
+Reference screenshots
+![info.plist](https://github.com/rahulbelekar/ProFilr/blob/master/Resources/URLScheme1.png)
+![info.plist](https://github.com/rahulbelekar/ProFilr/blob/master/Resources/URLScheme2.png)
 
 ##Code
 
@@ -93,11 +95,6 @@ let pFill = ProFilr()
         //Assign all values recieved from ProFilr application to your UI objects
     }
 ```
-
-Reference screenshots
-![info.plist](https://github.com/rahulbelekar/ProFilr/blob/master/Resources/URLScheme1.png)
-![info.plist](https://github.com/rahulbelekar/ProFilr/blob/master/Resources/URLScheme2.png)
-
 
 ##Properties and functions usage:-
 
