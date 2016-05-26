@@ -18,59 +18,28 @@ Apps that require filling of large forms to accept data gets less traction from 
 
 ##Installation
 
-<!--In AppDelegate.swift, just import IQKeyboardManagerSwift framework and enable IQKeyboardManager.-->
-<!---->
-<!--```swift-->
-<!--import IQKeyboardManagerSwift-->
-<!---->
-<!--@UIApplicationMain-->
-<!--class AppDelegate: UIResponder, UIApplicationDelegate {-->
-<!---->
-<!--var window: UIWindow?-->
-<!---->
-<!--func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {-->
-<!---->
-<!--IQKeyboardManager.sharedManager().enable = true-->
-<!---->
-<!--return true-->
-<!--}-->
-<!--}-->
-<!--```-->
-<!---->
-<!---->
-<!---->
-<!--#### Source Code Method:--->
-<!---->
-<!--[![Github tag](https://img.shields.io/github/tag/hackiftekhar/iqkeyboardmanager.svg)]()-->
-<!---->
-<!---->
-<!---->
-<!--***IQKeyboardManager (Objective-C):-*** Just ***drag and drop*** `IQKeyboardManager` directory from demo project to your project. That's it.-->
-<!---->
-<!--***IQKeyboardManager (Swift):-*** ***Drag and drop*** `IQKeyboardManagerSwift` directory from demo project to your project-->
-<!---->
-<!--In AppDelegate.swift, just enable IQKeyboardManager.-->
-<!---->
-<!--```swift-->
-<!--@UIApplicationMain-->
-<!--class AppDelegate: UIResponder, UIApplicationDelegate {-->
-<!---->
-<!--var window: UIWindow?-->
-<!---->
-<!--func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {-->
-<!---->
-<!--IQKeyboardManager.sharedManager().enable = true-->
-<!---->
-<!--return true-->
-<!--}-->
-<!--}-->
-<!--```-->
-<!---->
-<!---->
-<!--## Control Flow Diagram-->
-<!--[![IQKeyboardManager CFD](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/v3.3.0/Screenshot/IQKeyboardManagerCFD.jpg)](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/v3.3.0/Screenshot/IQKeyboardManagerCFD.jpg)-->
-<!---->
-<!---->
+In your form view Controller, just import ProFilr framework and add the following code to fetch the data from ProFilr Application. You will have to implement `ProFilrDelegate` to receive the data.
+
+```swift
+import ProFilr
+class ViewController: UIViewController, ProFilrDelegate {
+
+....Your Code...
+let pFill = ProFilr()
+....Your Code...
+
+@IBAction func autoFillFromProFilr(sender: UIButton) {
+       pFill.delegate = self
+       pFill.profileInformation()
+}
+
+//MARK: ProFilr Delegate
+    func ProFilrRecievedData(proFilr: ProFilr, data: ProfileDetails) {
+        self.imageView.image = data.profileData.profilePic
+        //Assign all values recieved from ProFilr application to your UI objects
+    }
+```
+
 ##Properties and functions usage:-
 
 You can find some documentation about properties, methods and their uses [here]().
