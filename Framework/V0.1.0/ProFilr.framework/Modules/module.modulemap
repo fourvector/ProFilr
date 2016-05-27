@@ -1,0 +1,10 @@
+framework module ProFilr {
+  umbrella header "ProFilr.h"
+
+  export *
+  module * { export * }
+}
+
+module ProFilr.Swift {
+    header "ProFilr-Swift.h"
+}
