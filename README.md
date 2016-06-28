@@ -98,9 +98,9 @@ self.imageView.image = data.profileData.profilePic
 You can find some documentation about properties, methods and their uses [here]().
 
 
-LICENSE
----
-Distributed under the MIT License.
+<!--LICENSE-->
+<!------->
+<!--Distributed under the MIT License.-->
 
 Author
 ---
