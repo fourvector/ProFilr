@@ -4,7 +4,7 @@
 </p>
 <H1 align="center">ProFilr</H1>
 
-Apps that require filling of large forms to accept data gets less traction from users, as users dont like to key in alot of data. We have our app on app store `ProFilr` were the user keys in data, this data is encrypted and stored. This `ProFilr-Framework` allows your app to retrive data from the `ProFilr` app and auto fill your app with data which will save alot of users key strokes.
+Apps that require filling of large forms to accept data gets less traction from users, as users dont like to key in alot of data. We have our app on app store `ProFilr` were the user keys in data, this data is encrypted and stored. This `ProFilr-Framework` allows your app to retrive data from the `ProFilr` app and auto fill your app with data which will save alot of users key strokes. App Store Link: https://itunes.apple.com/us/app/profilr/id1124576875
 
 
 ##Key Features
