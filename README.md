@@ -18,6 +18,7 @@ Apps that require filling of large forms to accept data gets less traction from 
 ####Manual Installation
 - Download ProFilr.framework file.
 - Go to your XCode Project's `General` settings. Drag/Add the downaloaded ProFilr.framework to the `Embedded Binaries` section. Make sure `Copy items if needed` is selected and click Finish.
+- Please use latest framework. i.e V1.0.0
 
 <!--##Properties and functions usage:--->
 
