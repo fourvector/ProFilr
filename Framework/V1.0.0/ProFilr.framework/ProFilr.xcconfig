@@ -1,0 +1,9 @@
+//
+//  ProFilr.xcconfig
+//  ProFilr
+//
+//  Created by Rahul  Belekar on 05/05/16.
+//  Copyright © 2016 Rahul  Belekar. All rights reserved.
+//
+SWIFT_INCLUDE_PATHS = $(SRCROOT)/ProFilr
+MODULEMAP_PRIVATE_FILE = $(SRCROOT)/ProFilr/Classes/Helpers/ProFilr.private.modulemap
